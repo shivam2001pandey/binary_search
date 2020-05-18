@@ -1,0 +1,20 @@
+int first(int A[],left,right,sk)
+{
+    int res=-1;
+    while(left<=right)
+    {
+       int mid=(left+right)/2;
+        if(A[mid]==sk)
+            {
+                res=mid;
+                right=mid-1;
+            }
+        else if(k>A[mid])
+            left=mid+1;
+        else if(k<A[mid])
+            right=mid-1;
+	
+        
+	}
+	return res;
+}
